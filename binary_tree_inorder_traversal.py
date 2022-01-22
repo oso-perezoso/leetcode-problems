@@ -39,17 +39,12 @@ class Solution:
         ptr: Optional[TreeNode] = root
 
         while ptr is not None or len(stack) != 0:
-            # Go to the leftmost node, putting nodes on the way on the stack:
-            while ptr is not None:
+            if ptr is not None:
                 stack.append(ptr)
                 ptr = ptr.left
-
-            # Now we reached the end
-
-            ptr = stack.pop()
-            result.append(ptr.val)
-
-            # We'll go to the right now:
-            ptr = ptr.right
+            else:
+                ptr = stack.pop()
+                result.append(ptr.val)
+                ptr = ptr.right
 
         return result
