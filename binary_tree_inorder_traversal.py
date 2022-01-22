@@ -1,5 +1,5 @@
-# Maximum Depth of Binary Tree
-# https://leetcode.com/problems/maximum-depth-of-binary-tree/
+# Binary Tree Inorder Traversal
+# https://leetcode.com/problems/binary-tree-inorder-traversal/
 
 
 from data_structures import TreeNode
