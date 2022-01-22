@@ -2,14 +2,8 @@
 # https://leetcode.com/problems/add-two-numbers/
 
 
+from data_structures import ListNode
 from typing import Optional
-
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val: int = 0, next: Optional[ListNode] = None):
-        self.val = val
-        self.next = next
 
 
 class Solution:
