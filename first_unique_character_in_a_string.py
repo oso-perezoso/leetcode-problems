@@ -8,7 +8,9 @@ class Solution:
         letter_count: List[int] = [0] * 26
 
         for c in s:
-            letter_count[ord(c) - ord("a")] = letter_count[ord(c) - ord("a")] + 1
+            letter_count[ord(c) - ord("a")] = (
+                letter_count[ord(c) - ord("a")] + 1
+            )
 
         for i, c in enumerate(s):
             if letter_count[ord(c) - ord("a")] == 1:

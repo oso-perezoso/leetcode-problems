@@ -13,6 +13,8 @@ class Solution:
                 return None
             else:
                 m: int = len(nums) // 2
-                return TreeNode(nums[m], _bst_rec(nums[:m]), _bst_rec(nums[m + 1 :]))
+                return TreeNode(
+                    nums[m], _bst_rec(nums[:m]), _bst_rec(nums[m + 1 :])
+                )
 
         return _bst_rec(nums)

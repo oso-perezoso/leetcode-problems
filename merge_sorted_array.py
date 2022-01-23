@@ -6,7 +6,9 @@ from typing import List
 
 
 class Solution:
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    def merge(
+        self, nums1: List[int], m: int, nums2: List[int], n: int
+    ) -> None:
         k: int = len(nums1) - 1  # pointer to the part that will be filled
         i: int = m - 1  # pointer to nums1
         j: int = n - 1  # pointer to nums2
