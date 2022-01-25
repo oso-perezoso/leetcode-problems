@@ -11,11 +11,11 @@ class Solution:
         result: List[List[int]] = []
 
         for i in range(len(nums) - 2):
-            j: int = i + 1
-            k: int = len(nums) - 1
-
             if i > 0 and nums[i] == nums[i - 1]:  # we skip duplicates
                 continue
+
+            j: int = i + 1
+            k: int = len(nums) - 1
 
             while j < k:
                 s: int = nums[i] + nums[j] + nums[k]
