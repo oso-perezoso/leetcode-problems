@@ -11,6 +11,8 @@ class Solution:
         result: List[List[int]] = []
 
         for i in range(len(nums) - 2):
+            if nums[i] > 0:  # 0 < nums[i] < nums[j] < nums[k]
+                break
             if i > 0 and nums[i] == nums[i - 1]:  # we skip duplicates
                 continue
 
