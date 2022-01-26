@@ -13,6 +13,8 @@ class Solution:
 
         for x in num_set:
             if x - 1 not in num_set:
+                # A consecutive sequence starts from x;
+                # calculate its length
                 y: int = x
                 new_len: int = 0
 
