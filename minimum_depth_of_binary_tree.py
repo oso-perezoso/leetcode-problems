@@ -28,6 +28,6 @@ class Solution:
                         next_level_nodes.append(node.right)
 
             level_nodes = next_level_nodes
-            depth = depth + 1
+            depth += 1
 
         return -1  # never happens

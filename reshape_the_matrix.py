@@ -29,6 +29,6 @@ class Solution:
         for row in mat:
             for x in row:
                 result[i // c][i % c] = x
-                i = i + 1
+                i += 1
 
         return result

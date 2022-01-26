@@ -13,6 +13,6 @@ class Solution:
             for s in strs[1:]:
                 if i >= len(s) or s[i] != c:
                     return result
-            result = result + c
+            result += c
 
         return result

@@ -10,6 +10,6 @@ class Solution:
 
         for s in stones:
             if s in jewel_set:
-                count = count + 1
+                count += 1
 
         return count

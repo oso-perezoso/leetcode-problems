@@ -1,5 +1,5 @@
 # Reverse Words in a String III
-# https://leetcode.com/problems/reverse-words-in-a-string-iii/submissions/
+# https://leetcode.com/problems/reverse-words-in-a-string-iii/
 
 
 from array import array
@@ -17,7 +17,8 @@ class Solution:
         def _reverse(s: array, i: int, j: int) -> None:
             while i < j:
                 s[i], s[j] = s[j], s[i]
-                i, j = i + 1, j - 1
+                i += 1
+                j -= 1
 
         i: int = 0
         while i < len(char_arr):
@@ -25,7 +26,7 @@ class Solution:
 
             # Make j point to the place after the word end:
             while j < len(char_arr) and char_arr[j] != " ":
-                j = j + 1
+                j += 1
 
             _reverse(char_arr, i, j - 1)
 

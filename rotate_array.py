@@ -15,8 +15,8 @@ class Solution:
         def reverse(nums: List[int], start: int, end: int) -> None:
             while start < end:
                 nums[start], nums[end] = nums[end], nums[start]
-                start = start + 1
-                end = end - 1
+                start += 1
+                end -= 1
 
         k = k % len(nums)
         reverse(nums, 0, len(nums) - 1)

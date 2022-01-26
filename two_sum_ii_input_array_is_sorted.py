@@ -16,8 +16,8 @@ class Solution:
             if s == target:
                 return [i + 1, j + 1]
             elif s < target:
-                i = i + 1
+                i += 1
             else:
-                j = j - 1
+                j -= 1
 
         return None

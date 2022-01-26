@@ -23,4 +23,5 @@ class Solution:
             j, k = 0, len(matrix[i]) - 1
             while j < k:
                 matrix[i][j], matrix[i][k] = matrix[i][k], matrix[i][j]
-                j, k = j + 1, k - 1
+                j += 1
+                k -= 1

@@ -15,7 +15,7 @@ class Solution:
 
             while head is not None:
                 head = head.next
-                l = l + 1
+                l += 1
 
             return l
 

@@ -1,5 +1,5 @@
 # Move Zeroes
-# https://leetcode.com/problems/move-zeroes/submissions/
+# https://leetcode.com/problems/move-zeroes/
 
 
 from typing import List
@@ -12,12 +12,13 @@ class Solution:
 
         while j < len(nums):
             while j < len(nums) and nums[j] == 0:
-                j = j + 1
+                j += 1
 
             if j < len(nums):
                 nums[i] = nums[j]
-                i, j = i + 1, j + 1
+                i += 1
+                j += 1
 
         while i < len(nums):
             nums[i] = 0
-            i = i + 1
+            i += 1

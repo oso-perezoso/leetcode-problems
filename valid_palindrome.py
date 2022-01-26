@@ -9,13 +9,14 @@ class Solution:
 
         while i < j:
             while i < j and not str.isalnum(s[i]):
-                i = i + 1
+                i += 1
             while i < j and not str.isalnum(s[j]):
-                j = j - 1
+                j -= 1
 
             if s[i].lower() != s[j].lower():
                 return False
 
-            i, j = i + 1, j - 1
+            i += 1
+            j -= 1
 
         return True

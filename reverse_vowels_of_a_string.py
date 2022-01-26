@@ -19,11 +19,12 @@ class Solution:
 
         while i < j:
             while i < j and not _is_vowel(chars[i]):
-                i = i + 1
+                i += 1
             while i < j and not _is_vowel(chars[j]):
-                j = j - 1
+                j -= 1
 
             chars[i], chars[j] = chars[j], chars[i]
-            i, j = i + 1, j - 1
+            i += 1
+            j -= 1
 
         return "".join(chars)

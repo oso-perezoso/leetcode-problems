@@ -1,5 +1,5 @@
 # Check If String Is a Prefix of Array
-# https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/submissions/
+# https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/
 
 
 from typing import List
@@ -13,7 +13,7 @@ class Solution:
             return True
 
         for w in words[1:]:
-            prefix_string = prefix_string + w
+            prefix_string += w
             if s == prefix_string:
                 return True
 

@@ -12,10 +12,11 @@ class Solution:
 
         while j < len(nums):
             while j < len(nums) and nums[j] == nums[j - 1]:
-                j = j + 1
+                j += 1
 
             if j < len(nums):
                 nums[i] = nums[j]
-                i, j = i + 1, j + 1
+                i += 1
+                j += 1
 
         return i

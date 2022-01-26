@@ -14,7 +14,7 @@ class Solution:
             s: int = d + c
 
             if s > 9:
-                s, c = s % 10, (s - s % 10) // 10
+                s, c = s % 10, s // 10
             else:
                 c = 0
 

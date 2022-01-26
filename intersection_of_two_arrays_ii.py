@@ -11,7 +11,7 @@ class Solution:
             frequencies: Dict[int, int] = {}
             for x in arr:
                 if x in frequencies:
-                    frequencies[x] = frequencies[x] + 1
+                    frequencies[x] += 1
                 else:
                     frequencies[x] = 1
             return frequencies
@@ -23,6 +23,6 @@ class Solution:
 
         for x in freqs1.keys():
             if x in freqs2:
-                result = result + [x] * min(freqs1[x], freqs2[x])
+                result += [x] * min(freqs1[x], freqs2[x])
 
         return result

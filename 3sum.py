@@ -24,18 +24,19 @@ class Solution:
 
                 if s == 0:
                     result.append([nums[i], nums[j], nums[k]])
-                    j, k = j + 1, k - 1
+                    j += 1
+                    k -= 1
                     while j < k and nums[j] == nums[j - 1]:
-                        j = j + 1
+                        j += 1
                     while j < k and nums[k] == nums[k + 1]:
-                        k = k - 1
+                        k -= 1
                 elif s < 0:
-                    j = j + 1
+                    j += 1
                     while j < k and nums[j] == nums[j - 1]:
-                        j = j + 1
+                        j += 1
                 else:
-                    k = k - 1
+                    k -= 1
                     while j < k and nums[k] == nums[k + 1]:
-                        k = k - 1
+                        k -= 1
 
         return result
