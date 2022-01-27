@@ -14,7 +14,7 @@ class Solution:
                 n = n // 10
             return square_sum
 
-        numbers: Set[int] = set([n])
+        numbers: Set[int] = {n}
 
         while n != 1:
             n = _digit_squares(n)
