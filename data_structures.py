@@ -14,7 +14,7 @@ class TreeNode:
 
     def __init__(
         self,
-        val=0,
+        val: int = 0,
         left: Optional[TreeNode] = None,
         right: Optional[TreeNode] = None,
     ):

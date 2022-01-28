@@ -2,6 +2,9 @@
 # https://leetcode.com/problems/first-unique-character-in-a-string/
 
 
+from typing import List
+
+
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         # Could use a dictionary, but we only use a-z letters:

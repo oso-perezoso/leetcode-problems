@@ -23,7 +23,7 @@ class Solution:
                 ptr2 = ptr2.next
 
         while ptr2 is not None:
-            ptr1 = ptr1.next
+            ptr1 = ptr1.next  # ptr1 is not None either
             ptr2 = ptr2.next
 
         # ptr1 is now BEFORE the node to be deleted
